@@ -6,7 +6,7 @@ int main() {
     AutocompleteEngine engine;
     std::string path = "./data/dictionary.txt";
     if(!engine.load_dictionary(path)) {
-        return 0;
+        return 1;
     }
     std::string input;
     while(true) {
@@ -18,7 +18,7 @@ int main() {
         }
         std::vector<std::string> suggestions = engine.get_suggestions(input);
         if(suggestions.empty()) {
-            std::cout<<"No answear";
+            std::cout<<"No answer";
             continue;
         }
         for(const auto& word : suggestions) {
