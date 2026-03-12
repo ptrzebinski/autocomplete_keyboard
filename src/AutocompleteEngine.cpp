@@ -11,7 +11,7 @@ bool AutocompleteEngine::load_dictionary(const std::string& filepath) {
     long long frequency;
     while(file >> word >> frequency) {
         if(word.length() > 0 && word.length() < 40) {
-            trie.insert(word);
+            trie.insert(word, frequency);
         }
     }
     file.close();

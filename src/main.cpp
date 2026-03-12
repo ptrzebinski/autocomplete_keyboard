@@ -18,7 +18,7 @@ int main() {
         }
         std::vector<std::string> suggestions = engine.get_suggestions(input);
         if(suggestions.empty()) {
-            std::cout<<"No answer";
+            std::cout<<"No answer"<<"\n";
             continue;
         }
         for(const auto& word : suggestions) {

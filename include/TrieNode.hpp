@@ -5,8 +5,8 @@ struct TrieNode {
     std::unordered_map<char, TrieNode*> children;
     
     bool is_end_of_word;
-    
-    TrieNode() : is_end_of_word(false) {}
+    long long frequency;
+    TrieNode() : is_end_of_word(false), frequency(0) {}
     
     ~TrieNode() {
         for(auto& pair : children){
