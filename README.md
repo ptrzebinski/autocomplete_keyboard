@@ -29,7 +29,9 @@
   <li><b>✂️ Multi-Word Magic:</b> The engine seamlessly tokenizes your input on the fly, ensuring it always focuses on predicting just the <i>current</i> word you are actively typing.</li>
   <li><b>🎨 Gorgeous Interface (TUI):</b> Who said the terminal has to be boring? Using the FTXUI library, we've built a fully reactive, visually appealing interface that updates smoothly with every key press.</li>
 </ul>
-
+<p align="center">
+  <img src="assets/demo.gif" width="600" alt="Opis nagrania">
+</p>
 <h2>🛠️ How to run it? (Getting Started)</h2>
 <p>Thanks to the power of CMake's <code>FetchContent</code>, there is zero manual dependency hunting. The magic happens automatically in the background! 🪄</p>
 
