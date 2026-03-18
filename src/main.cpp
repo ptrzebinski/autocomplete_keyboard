@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include<algorithm>
+#include<cctype>
 #include "ftxui/component/component.hpp"
 #include "ftxui/component/screen_interactive.hpp"
 #include "ftxui/dom/elements.hpp"
@@ -23,13 +25,24 @@ int main() {
 
     auto renderer = Renderer(input_field, [&] {
         std::vector<std::string> suggestions;
+        std::string current = search_query.substr(search_query.find_last_of(' ') + 1);
         
         if (!search_query.empty()) {
-            suggestions = engine.get_suggestions(search_query);
+            bool upper_case = ('A' <= current[0] && current[0] <= 'Z');
+            
+            if(upper_case) current[0] += 32;
+            
+            suggestions = engine.get_suggestions(current);
+            
+            if(upper_case) {
+                for(auto& word : suggestions) {
+                    if(!word.empty()) word[0] -= 32;
+                }
+            }
         }
 
         Elements results_elements;
-        if (suggestions.empty() && !search_query.empty()) {
+        if (suggestions.empty() && !current.empty()) {
             results_elements.push_back(text(" No results ") | color(Color::Red));
         } 
 

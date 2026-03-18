@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/badge/C++-17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++17" />
     <img src="https://img.shields.io/badge/CMake-3.14+-064F8C?style=for-the-badge&logo=cmake&logoColor=white" alt="CMake" />
     <img src="https://img.shields.io/badge/UI-FTXUI-FF7139?style=for-the-badge&logo=appveyor&logoColor=white" alt="FTXUI" />
-    <img src="https://img.shields.io/badge/License-MIT-success?style=for-the-badge" alt="License" />
+    <!-- <img src="https://img.shields.io/badge/License-MIT-success?style=for-the-badge" alt="License" /> -->
   </p>
 
   <h3>✨ Feel the magic of smart text prediction right in your terminal! ✨</h3>
