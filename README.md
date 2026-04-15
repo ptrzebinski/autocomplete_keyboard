@@ -14,7 +14,7 @@
     <sub>Powered by a frequency-weighted Trie and wrapped in a beautiful, reactive interface.</sub>
   </p>
 </div>
-
+.
 <hr>
 
 > **💡 What is this?**
