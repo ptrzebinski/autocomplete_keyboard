@@ -14,7 +14,7 @@
     <sub>Powered by a frequency-weighted Trie and wrapped in a beautiful, reactive interface.</sub>
   </p>
 </div>
-.
+
 <hr>
 
 > **💡 What is this?**
@@ -36,8 +36,8 @@
 <p>Thanks to the power of CMake's <code>FetchContent</code>, there is zero manual dependency hunting. The magic happens automatically in the background! 🪄</p>
 
 <h3>📦 1. Grab the code</h3>
-<pre><code>git clone https://github.com/ptrzebinski/autocomplete-keyboard.git
-cd autocomplete-keyboard</code></pre>
+<pre><code>git clone https://github.com/ptrzebinski/autocomplete_keyboard.git
+cd autocomplete_keyboard</code></pre>
 
 <h3>⚙️ 2. Build the engine (Turning on the -O3 boosters!)</h3>
 <pre><code>cmake -B build -S .
